@@ -10,6 +10,7 @@ html {
 
 body {
   font-size: 62.5%;
+  color: #0a1f44;
 }
 p {
   color: #0a1f44;
@@ -170,4 +171,102 @@ p {
   border-radius: 3px;
   box-shadow: 0px 0px 1px rgba(10, 31, 68, 0.08),
     0px 3px 4px rgba(10, 31, 68, 0.1);
+}
+
+/* *************************************************** */
+/* CARDS */
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+}
+
+.first-card {
+  grid-row: 1/ -1;
+  box-shadow: 0px 0px 1px rgba(10, 31, 68, 0.1),
+    0px 18px 18px rgba(10, 31, 68, 0.12);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.first-card-img {
+  width: 100%;
+}
+
+.card-text-box {
+  padding: 1.5rem;
+}
+
+.card-heading {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #8a94a6;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.box {
+  width: 100%;
+  height: 3rem;
+  background-color: #0a1f44f1;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-card {
+  grid-column: 2;
+  padding: 2rem;
+  box-shadow: 0px 0px 1px rgba(10, 31, 68, 0.1),
+    0px 18px 18px rgba(10, 31, 68, 0.12);
+  border-radius: 4px;
+}
+
+.btn {
+  background-color: #0d55cf;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #08337c;
+}
+
+.third-card {
+  grid-column: 2;
+  padding: 2rem;
+  background-color: #0d55cf;
+  border-radius: 4px;
+}
+
+.card-text-w,
+.author {
+  color: #fff;
+}
+
+.author {
+  font-size: 1rem;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.fourth-card {
+  grid-column: 3;
+  grid-row: 1/ -1;
 }
