@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem rgba(10, 31, 68, 0.2);
+  border-radius: 6px;
+}
+
 html {
   font-family: "poppins", sans-serif;
 }
@@ -176,12 +182,15 @@ p {
 /* *************************************************** */
 /* CARDS */
 
-.cards {
+.cards-top {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
+
+/* FIRST CARD */
 
 .first-card {
   grid-row: 1/ -1;
@@ -221,6 +230,8 @@ p {
   justify-content: center;
 }
 
+/* SECOND CARD */
+
 .second-card {
   grid-column: 2;
   padding: 2rem;
@@ -244,6 +255,8 @@ p {
   background-color: #08337c;
 }
 
+/* THIRD CARD */
+
 .third-card {
   grid-column: 2;
   padding: 2rem;
@@ -266,7 +279,198 @@ p {
   gap: 1.2rem;
 }
 
+/* FOURTH CARD */
+
 .fourth-card {
   grid-column: 3;
   grid-row: 1/ -1;
+  box-shadow: 0px 0px 1px rgba(10, 31, 68, 0.1),
+    0px 18px 18px rgba(10, 31, 68, 0.12);
+  border-radius: 4px;
+}
+
+.fourth-card-img {
+  width: 100%;
+}
+
+.fourth-card-base {
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heart-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  cursor: pointer;
+}
+
+/* CARDS-BOTTOM ********************************/
+.cards-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+/* FIFTH CARD */
+.fifth-card {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 0px 1px rgba(10, 31, 68, 0.1),
+    0px 18px 18px rgba(10, 31, 68, 0.12);
+}
+
+.fifth-card-img {
+  width: 100%;
+}
+
+.fifth-card-content {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  background: rgba(10, 31, 68, 0.2);
+}
+
+.col-w {
+  color: #fff;
+}
+
+/* SIXTH CARD */
+.sixth-cont-m {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sixth-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px rgba(10, 31, 68, 0.1),
+    0px 18px 18px rgba(10, 31, 68, 0.12);
+}
+
+.v-icon {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30%;
+  margin-bottom: 4rem;
+}
+
+.name {
+  font-size: 1.6rem;
+  color: inherit;
+}
+
+.title {
+  font-size: 1rem;
+  color: #8a94a6;
+}
+
+.profile-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: auto;
+}
+
+.input-one {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  background-color: #0d55cf;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.profile-input {
+  width: 70%;
+  border: none;
+}
+
+.i-one {
+  background-color: #0d55cf;
+  /* border: 1px solid #5688dd; */
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.i-two {
+  background-color: #fff;
+  color: #0a1f44;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.add {
+  height: 1rem;
+  width: 1rem;
+  color: #fff;
+}
+
+.chatbox {
+  height: 1rem;
+  width: 1rem;
+  color: #182c4f;
+  border-radius: 4px;
+}
+
+.input-two {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: 1px solid #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* SEVENTH CARD */
+.seventh-card {
+  box-shadow: 0px 0px 1px rgba(10, 31, 68, 0.1),
+    0px 18px 18px rgba(10, 31, 68, 0.12);
+  border-radius: 4px;
+}
+
+.seventh-img {
+  width: 100%;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bookmark {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0.5rem;
+  color: #fff;
+  background: #fab005;
+  border-radius: 50%;
+}
+
+.views {
+  font-size: 0.8rem;
+  color: #8a94a6;
+  border-bottom: 1px solid transparent;
+}
+
+.views:hover {
+  border-bottom: 1px solid #8a94a6;
 }
