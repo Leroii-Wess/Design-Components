@@ -6,8 +6,8 @@
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.3rem rgba(10, 31, 68, 0.2);
-  border-radius: 6px;
+  /* box-shadow: 0 0 0 0.3rem rgba(10, 31, 68, 0.2);
+  border-radius: 6px; */
 }
 
 html {
@@ -18,6 +18,7 @@ body {
   font-size: 62.5%;
   color: #0a1f44;
 }
+
 p {
   color: #0a1f44;
 }
@@ -311,6 +312,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  margin-bottom: 3.2rem;
 }
 
 /* FIFTH CARD */
@@ -473,4 +475,162 @@ p {
 
 .views:hover {
   border-bottom: 1px solid #8a94a6;
+}
+
+/***** FORMS SECTION ***************************************/
+
+.url-div {
+  border: 1px solid #8a94a6;
+  padding: 1rem 2rem;
+  width: 47%;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.link-header {
+  margin-left: 40%;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.link {
+  font-size: 1.2rem;
+  color: #8a94a6;
+}
+
+.blue-box {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background-color: #0d55cf;
+  top: 0;
+  left: 0;
+}
+
+.link-icon {
+  font-size: 1.5rem;
+  color: #8a94a6;
+}
+
+/* LOGIN FORM *******/
+.form-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.login-form {
+  padding: 4rem;
+  text-align: center;
+  box-shadow: 0px 0px 1px rgba(10, 31, 68, 0.1),
+    0px 18px 18px rgba(10, 31, 68, 0.12);
+  border-radius: 4px;
+  border: 2px solid #007fff;
+}
+
+.details-form {
+  box-shadow: 0px 0px 1px rgba(10, 31, 68, 0.1),
+    0px 18px 18px rgba(10, 31, 68, 0.12);
+  border-radius: 4px;
+}
+
+.login-header {
+  font-size: 1.8rem;
+  letter-spacing: -0.75px;
+}
+
+.login-text {
+  font-size: 1rem;
+  margin-bottom: 4rem;
+  color: #8a94a6;
+}
+
+.login-text span {
+  color: #0d55cf;
+  cursor: pointer;
+}
+
+/* LOGIN BOXES */
+
+.login-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.email-box {
+  padding: 1rem 2rem;
+  border: 1px solid #8a94a6;
+  border-radius: 4px;
+  position: relative;
+}
+
+.email-border-b {
+  border: 2px solid #007fff;
+}
+
+.email {
+  width: 100%;
+  border: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: inherit;
+  font-family: inherit;
+}
+
+.email::placeholder {
+  font-family: poppins;
+}
+
+.password-box {
+  padding: 1rem 2rem;
+  border: 1px solid #8a94a6;
+  border-radius: 4px;
+  position: relative;
+}
+
+.password {
+  width: 100%;
+  border: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-family: inherit;
+}
+
+.password::placeholder {
+  font-family: poppins;
+}
+
+.login-icon {
+  font-size: 1.5rem;
+  color: #8a94a6;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.login-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.f-pass {
+  font-size: 0.8rem;
+  color: #0d55cf;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.f-pass:hover {
+  color: #08337c;
+}
+
+.login-btn {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
