@@ -530,12 +530,6 @@ p {
   border: 2px solid #007fff;
 }
 
-.details-form {
-  box-shadow: 0px 0px 1px rgba(10, 31, 68, 0.1),
-    0px 18px 18px rgba(10, 31, 68, 0.12);
-  border-radius: 4px;
-}
-
 .login-header {
   font-size: 1.8rem;
   letter-spacing: -0.75px;
@@ -633,4 +627,43 @@ p {
 .login-btn {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+/* DETAILS FORM */
+
+.details-box {
+  padding: 4rem;
+  box-shadow: 0px 0px 1px rgba(10, 31, 68, 0.1),
+    0px 18px 18px rgba(10, 31, 68, 0.12);
+  border-radius: 4px;
+}
+
+.details-form label {
+  font-size: 1rem;
+  color: #8a94a6;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.details-form input,
+.details-form select {
+  width: 100%;
+  padding: 1rem 1rem;
+  border: 1px solid #8a94a6;
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+  font-family: inherit;
+  color: #0a1f44;
+}
+
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(to bottom right, #ff6b6b, #ff922b);
+  transition: all 0.3s linear, opacity 0.5s;
+  background-position: 0 -40px;
+}
+
+.submit-btn:hover {
+  background-position: 0 0;
+  background: linear-gradient(to bottom right, #fa5252, #fd7e14);
 }

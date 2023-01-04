@@ -249,7 +249,44 @@
             </form>
           </div>
 
-          <div class="details-form">Full name..</div>
+          <div class="details-box">
+            <form class="details-form">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  class="full-name"
+                  placeholder="Don Corleone"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="country">Country</label>
+                <select id="country" class="country">
+                  <option value="">Select Country</option>
+                  <option value="nigeria">Nigeria</option>
+                  <option value="benin-rep">Benin Republic</option>
+                  <option value="ghana">Ghana</option>
+                  <option value="senegal">Senegal</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="full-address">Enter Full Address</label>
+                <input
+                  id="full-address"
+                  type="text"
+                  class="full-address"
+                  placeholder="Address"
+                  required
+                />
+              </div>
+
+              <button class="btn submit-btn">Submit</button>
+            </form>
+          </div>
         </div>
       </section>
     </div>
